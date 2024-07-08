@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <h1 id="navbar-logo">W</h1>
+            <h1>Workspace</h1>
+        </div>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search in Home" id="navbar-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <div class="content">
+        <div class="menubar" style="background-color: rgba(250, 21, 1, 0.655);">
+            <div class="menubar-1st">
+                <div class="home-logo" style="border:2px solid rgb(109, 223, 48) ;">
+                    <a href="home.html" class="home-logo">
+                        <i class="fa-solid fa-house"></i>
+                        <h1>Home</h1>
+                    </a>
+                </div>
+                <div class="customers-logo"style="border:2px solid rgb(109, 223, 48) ;">
+                    <a href="costomer.html" class="customers-logo">
+                        <i class="fa-solid fa-users"></i>
+                        <h1>Customers</h1>
+                    </a>
+                </div>
+                <div class="department-logo"style="border:2px solid rgb(109, 223, 48) ;">
+                    <a href="department.html" class="department-logo">
+                        <i class="fa-solid fa-address-card"></i>
+                        <h1>Department</h1>
+                    </a>
+                </div>
+                <div class="media-logo"style="border:2px solid rgb(109, 223, 48) ;">
+                    <a href="media.html" class="media-logo">
+                        <i class="fa-regular fa-image" style="padding-left:0.5rem;"></i>
+                        <h1 style="padding-left: 0.5rem;">Media</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="account-logo"style="border:3px solid rgb(109, 223, 48) ;">
+                <a href="account.html" class="account-logo">
+                    <i class="fa-solid fa-user"></i>
+                    <h1>My Account</h1>
+                </a>
+            </div>
+        </div>
+        <div class="middle-part2" style="background-color: rgba(115, 211, 112, 0.611);">
+            <div class="media">
+                
+                <div style="margin-top: 20px;" class="flex-ite"><img src="user.png"width="55px" height="55px"><a href="#"
+                        class="fa fa-pencil" onclick="img()"></a>
+                </div>
+                
+            </div>
+            <br>
+            <h3>click on the pen to change profile picture</h3>
+            <form>
+                <h3>Name:</h3><br>
+                <input type="text" value="harry potter" id="name"><a href="#" class="fa fa-pencil"
+                    style="font-size: 35px; color: black;" onClick="editName()"></a><br><br>
+                <h3>Email:</h3><br>
+                <input type="email" value="harry@gmail.com" id="email"><a href="#" class="fa fa-pencil"
+                    style="font-size: 35px; color: black;" onClick="editEmail()"></a><br><br>
+                <h3>Phone-no:</h3><br>
+                <input type="text" value="978564" id="pno"><a href="#" class="fa fa-pencil"
+                    style="font-size: 35px; color: black;" onClick="editPh()"></a><br><br>
+                <h3>DOB:</h3><br>
+                <input type="text" value="2 jan 1990" id="dob"><a href="#" class="fa fa-pencil"
+                    style="font-size: 35px;color: black;" onClick="editDob()"></a><br><br>
+                <input type="button" value="SAVE" class="button" onclick="save()">
+                <input type="button" value="CANCEL" class="button">
+                <br><br><br><br><br>
+            </form>
+        </div>
+   
+</body>
+</html>
